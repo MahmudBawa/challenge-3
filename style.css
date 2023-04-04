@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    max-width: 1440px;
+    font-size: 14px;
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+/* utilities */
+.primarycolor1 {
+    color: hsl(158, 36%, 37%);
+}
+.grey {
+    color: grey;
+}
+.primarycolor2 {
+    background-color: hsl(33, 27%, 79%);
+}
+
+.neutral1 {
+    background-color: hsl(212, 21%, 14%);
+}
+
+.neutral2 {
+    background-color: hsl(228, 12%, 48%);
+}
+
+.neutral3 {
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+
+.section {
+    max-width: 750px;
+    margin: 11.5rem auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.section .fleximage {
+    background: url('./images/image-product-desktop.jpg') no-repeat center center/cover;
+    width: 500px;
+    height: 500px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.section .flextext {
+    width: 500px;
+    height: 500px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0.5rem 2rem;
+}
+
+.perfume {
+    margin: 2rem 0;
+    color: grey;
+}
+
+.gabrielle {
+    font-family: 'Fraunces';
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+    width: 70%;
+}
+
+.floral {
+    color: grey;
+    line-height: 1.7rem;
+    width: 80%;
+    margin-bottom: 1.2rem;
+    
+}
+
+.dollar {
+    font-size: 2rem;
+    font-family: 'Fraunces';
+}
+
+.dollarstrike {
+    font-size: 0.8rem;
+    padding-left: 2rem;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    width: 90%;
+    background-color: hsl(158, 36%, 22%);
+    color: white;
+    font-family: 'Fraunces';
+    padding: 0.5rem;
+    margin-top: 8px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.flextext a i {
+    margin-right: 10px;
+}
+
+
+/* Mobile */
+@media(max-width: 760px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .section .fleximage {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        width: 300px;
+        height: 250px;
+    }
+
+    .section .flextext {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 300px;
+        height: 450px;
+    }
+
+    .section .perfume {
+        font-size: 0.8rem;
+        margin-top: 2px;
+        margin-bottom: 1rem;
+    }
+
+    .section .gabrielle {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .section .floral {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    
+}
